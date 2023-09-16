@@ -176,7 +176,7 @@ app.post('/merge', upload.fields([{ name: 'image1', maxCount: 1 }, { name: 'imag
         // Send a success response with a dynamic download button
         res.status(200).send(`
             <h1>Merged image created.</h1>
-            <a href="${url}" download="merged_image.bmp">
+            <a href="${url}" download>
                 <button>Download Merged Image</button>
             </a>
         `);
