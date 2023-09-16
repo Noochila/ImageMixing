@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Merge App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Merge App</h1>
+    <div class="image-card">
+        <h2>Image 1</h2>
+        <form action="/merge" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image1" accept=".bmp">
+            <input type="file" name="image2" accept=".bmp">
+            <button type="submit">Merge Images</button>
+        </form>
+        <img id="image1" src="" alt="Image 1">
+    </div>
+    <div class="image-card">
+        <h2>Image 2</h2>
+        <img id="image2" src="" alt="Image 2">
+    </div>
+    <div class="image-card">
+        <h2>Merged Image</h2>
+        <img id="mergedImage" src="" alt="Merged Image">
+        <p id="uploadStatus"></p>
+    </div>
+    
+    <script src="app.js"></script> 
+</body>
+</html>
